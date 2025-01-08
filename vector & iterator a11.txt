@@ -1,0 +1,34 @@
+import java.util.Iterator;
+import java.util.Vector;
+import java.util.Scanner;
+
+class VectorDemo 
+{
+    public static void main(String[] args) 
+    {
+        // Create a Vector of String objects
+        Vector<String> names = new Vector<>();
+
+	Scanner sc = new Scanner(System.in);
+	String str = "";
+	System.out.println("Enter five names of your friend one by one to add to the vector:");
+
+        // Add five names to the Vector
+	for(int i=0; i<5; i++)
+	{
+		str = sc.nextLine();
+		names.add(str);
+	}
+
+        // Create an iterator to traverse the Vector
+        Iterator<String> iterator = names.iterator();
+
+        // Print each name using the iterator
+	System.out.println("\nNames of your five friends are:");
+        while (iterator.hasNext()) 
+        {
+            String name = iterator.next();
+            System.out.println(name);
+        }
+    }
+}

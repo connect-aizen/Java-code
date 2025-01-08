@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+// Define the main class
+class StringChecker {
+    public static void main(String arr[]) {
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("Enter a String: ");
+        String str = sc.nextLine();
+        
+        try {
+            // Check if the input matches "University"
+            if (str.equals("University")) {
+                System.out.println("You entered University");
+            } else {
+                throw new NoMatchFoundException("Enter String properly.");
+            }
+        } catch (NoMatchFoundException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            sc.close(); // Close the Scanner to prevent resource leaks
+        }
+    }
+}
+
+// Define the custom exception class
+class NoMatchFoundException extends Exception {
+    public NoMatchFoundException(String msg) {
+        super(msg); // Call the superclass constructor with the message
+    }
+}

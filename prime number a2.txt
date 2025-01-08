@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+// Class to handle prime number calculations
+class PrimeCalculator {
+    private int start; // Start of the range
+    private int end;   // End of the range
+
+    // Constructor to initialize the range
+    public PrimeCalculator(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
+
+    // Method to check if a number is prime
+    private boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Method to calculate the sum of primes in the range
+    public int calculateSumOfPrimes() {
+        int sum = 0;
+        for (int i = start; i <= end; i++) {
+            if (isPrime(i)) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+}
+
+// Main class
+public class PrimeNumberSum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the start of the range:");
+        int start = scanner.nextInt();
+
+        System.out.println("Enter the end of the range:");
+        int end = scanner.nextInt();
+
+        // Create an object of PrimeCalculator
+        PrimeCalculator calculator = new PrimeCalculator(start, end);
+
+        // Calculate and display the sum of primes
+        int sumOfPrimes = calculator.calculateSumOfPrimes();
+        System.out.println("The sum of all prime numbers between " + start + " and " + end + " is: " + sumOfPrimes);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,217 @@
+import java.util.Scanner;
+
+// Class to determine grades based on score
+class Grader {
+    private float score;
+
+    // Constructor
+    public Grader(float score) {
+        this.score = score;
+    }
+
+    // Method to calculate and return letter grade
+    public char letterGrade() {
+        if (score >= 90 && score <= 100) {
+            return 'O'; // Outstanding
+        } else if (score >= 80) {
+            return 'E'; // Excellent
+        } else if (score >= 70) {
+            return 'A'; // Very Good
+        } else if (score >= 60) {
+            return 'B'; // Good
+        } else if (score >= 50) {
+            return 'C'; // Average
+        } else if (score >= 40) {
+            return 'D'; // Pass
+        } else {
+            return 'F'; // Fail
+        }
+    }
+}
+
+// Class to test the Grader class
+public class GraderTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for a score
+        System.out.print("Enter your score (0 to 100): ");
+        float score = scanner.nextFloat();
+
+        // Check if the score is valid
+        if (score >= 0 && score <= 100) {
+            // Create Grader object and calculate grade
+            Grader grader = new Grader(score);
+            char grade = grader.letterGrade();
+
+            // Display the grade
+            System.out.println("Your Grade is: " + grade);
+        } else {
+            System.out.println("Invalid score! Please enter a value between 0 and 100.");
+        }
+
+        scanner.close();
+    }
+}import java.util.Scanner;
+
+// Class to determine grades based on score
+class Grader {
+    private float score;
+
+    // Constructor
+    public Grader(float score) {
+        this.score = score;
+    }
+
+    // Method to calculate and return letter grade
+    public char letterGrade() {
+        if (score >= 90 && score <= 100) {
+            return 'O'; // Outstanding
+        } else if (score >= 80) {
+            return 'E'; // Excellent
+        } else if (score >= 70) {
+            return 'A'; // Very Good
+        } else if (score >= 60) {
+            return 'B'; // Good
+        } else if (score >= 50) {
+            return 'C'; // Average
+        } else if (score >= 40) {
+            return 'D'; // Pass
+        } else {
+            return 'F'; // Fail
+        }
+    }
+}
+
+// Class to test the Grader class
+public class GraderTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for a score
+        System.out.print("Enter your score (0 to 100): ");
+        float score = scanner.nextFloat();
+
+        // Check if the score is valid
+        if (score >= 0 && score <= 100) {
+            // Create Grader object and calculate grade
+            Grader grader = new Grader(score);
+            char grade = grader.letterGrade();
+
+            // Display the grade
+            System.out.println("Your Grade is: " + grade);
+        } else {
+            System.out.println("Invalid score! Please enter a value between 0 and 100.");
+        }
+
+        scanner.close();
+    }
+}import java.util.Scanner;
+
+// Class to determine grades based on score
+class Grader {
+    private float score;
+
+    // Constructor
+    public Grader(float score) {
+        this.score = score;
+    }
+
+    // Method to calculate and return letter grade
+    public char letterGrade() {
+        if (score >= 90 && score <= 100) {
+            return 'O'; // Outstanding
+        } else if (score >= 80) {
+            return 'E'; // Excellent
+        } else if (score >= 70) {
+            return 'A'; // Very Good
+        } else if (score >= 60) {
+            return 'B'; // Good
+        } else if (score >= 50) {
+            return 'C'; // Average
+        } else if (score >= 40) {
+            return 'D'; // Pass
+        } else {
+            return 'F'; // Fail
+        }
+    }
+}
+
+// Class to test the Grader class
+public class GraderTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for a score
+        System.out.print("Enter your score (0 to 100): ");
+        float score = scanner.nextFloat();
+
+        // Check if the score is valid
+        if (score >= 0 && score <= 100) {
+            // Create Grader object and calculate grade
+            Grader grader = new Grader(score);
+            char grade = grader.letterGrade();
+
+            // Display the grade
+            System.out.println("Your Grade is: " + grade);
+        } else {
+            System.out.println("Invalid score! Please enter a value between 0 and 100.");
+        }
+
+        scanner.close();
+    }
+}import java.util.Scanner;
+
+// Class to determine grades based on score
+class Grader {
+    private float score;
+
+    // Constructor
+    public Grader(float score) {
+        this.score = score;
+    }
+
+    // Method to calculate and return letter grade
+    public char letterGrade() {
+        if (score >= 90 && score <= 100) {
+            return 'O'; // Outstanding
+        } else if (score >= 80) {
+            return 'E'; // Excellent
+        } else if (score >= 70) {
+            return 'A'; // Very Good
+        } else if (score >= 60) {
+            return 'B'; // Good
+        } else if (score >= 50) {
+            return 'C'; // Average
+        } else if (score >= 40) {
+            return 'D'; // Pass
+        } else {
+            return 'F'; // Fail
+        }
+    }
+}
+
+// Class to test the Grader class
+public class GraderTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for a score
+        System.out.print("Enter your score (0 to 100): ");
+        float score = scanner.nextFloat();
+
+        // Check if the score is valid
+        if (score >= 0 && score <= 100) {
+            // Create Grader object and calculate grade
+            Grader grader = new Grader(score);
+            char grade = grader.letterGrade();
+
+            // Display the grade
+            System.out.println("Your Grade is: " + grade);
+        } else {
+            System.out.println("Invalid score! Please enter a value between 0 and 100.");
+        }
+
+        scanner.close();
+    }
+}
